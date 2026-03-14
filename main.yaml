@@ -1,0 +1,155 @@
+esphome:
+  name: z906
+  friendly_name: Z906
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Home Assistant API
+api:
+  encryption:
+    key: !secret ha_password
+
+ota:
+  - platform: esphome
+    password: !secret ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: "Z906 Fallback Hotspot"
+    password: "secure"
+
+captive_portal:
+
+remote_transmitter:
+  pin: 4
+  carrier_duty_percent: 50%
+
+button:
+
+# ----------- remote buttons
+
+  - platform: template
+    name: Z906 Power
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0x7F80
+  
+
+  - platform: template
+    name: Z906 Input
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xF708
+  
+
+  - platform: template
+    name: Z906 Mute
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0x15EA
+  
+
+  - platform: template
+    name: Z906 Level
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xF50A
+  
+
+  - platform: template
+    name: Z906 Plus
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0x55AA
+  
+
+  - platform: template
+    name: Z906 Effect
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xF10E
+  
+
+  - platform: template
+    name: Z906 Minus
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0x956A
+  
+# ----------- additional buttons
+
+  - platform: template
+    name: Z906 Input1
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xFB04
+  
+  - platform: template
+    name: Z906 Input2
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0x7D82
+  
+  - platform: template
+    name: Z906 Input3
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xF30C
+
+  - platform: template
+    name: Z906 Input4
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0x738C
+  
+  - platform: template
+    name: Z906 Input5
+    on_press:
+      then: 
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xFD02
+  
+  - platform: template
+    name: Z906 AUX
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xBD42
+  
+  - platform: template
+    name: Z906 TEST
+    on_press: 
+      then:
+        - remote_transmitter.transmit_nec: 
+            address: 0xA002
+            command: 0xFE01
