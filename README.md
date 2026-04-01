@@ -1,7 +1,17 @@
-# Z906 ESPHOME config for HA
+<h1 align="center">Z906 ESPHOME config for HA</h1>
+<p align="center">A simple ESPHOME YAML configuration for controlling the  <b>Logitech Z906</b> speaker system via <b>IR</b> and Home Assistant.
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/ESPHome-compatible-blue?style=for-the-badge&logo=esphome" alt="ESPHome">
+  <img src="https://img.shields.io/badge/Home%20Assistant-compatible-41BDF5?style=for-the-badge&logo=home-assistant" alt="Home Assistant">
+  <img src="https://img.shields.io/github/created-at/Adrian-Cxll/Z906-ESPHome-remote?style=for-the-badge" alt="Created At">
+  <img src="https://img.shields.io/github/last-commit/Adrian-Cxll/Z906-ESPHome-remote?style=for-the-badge" alt="Last Commit">
+  <img src="https://img.shields.io/github/stars/Adrian-Cxll/Z906-ESPHome-remote?style=for-the-badge" alt="Stars">
+  <img src="https://img.shields.io/github/license/Adrian-Cxll/Z906-ESPHome-remote?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/downloads/Adrian-Cxll/Z906-ESPHome-remote/total?style=for-the-badge" alt="Downloads">
+</p>
 
-A simple ESPHOME YAML configuration for controlling the  **Logitech Z906** speaker system via **IR** and Home Assistant.
-
+<br><br>
 
 This script allows you to fully replace your Z906 remote. Using an ESP8266/ESP32 and an IR transmitter, you can control your Logitech speakers directly from Home Assistant.
 
