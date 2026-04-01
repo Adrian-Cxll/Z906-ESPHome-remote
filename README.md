@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/last-commit/Adrian-Cxll/Z906-ESPHome-remote?style=for-the-badge" alt="Last Commit">
   <img src="https://img.shields.io/github/stars/Adrian-Cxll/Z906-ESPHome-remote?style=for-the-badge" alt="Stars">
   <img src="https://img.shields.io/github/license/Adrian-Cxll/Z906-ESPHome-remote?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/downloads/Adrian-Cxll/Z906-ESPHome-remote/total?style=for-the-badge" alt="Downloads">
+  <img alt="GitHub Downloads (all assets, latest release)" src="https://img.shields.io/github/downloads/Adrian-Cxll/Z906-ESPHome-remote/latest/total?style=for-the-badge">
 </p>
 
 <br><br>
