@@ -29,17 +29,27 @@ The IR codes were captured using a Flipper Zero.
  ---
  
 ### Available Functions
-
-- Power
-- volume up
-- volume down
-- mute
-- effect
-- level
-- input
-- input[1-5] individually
-- aux
-- test
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>Power</li>
+        <li>volume up</li>
+        <li>volume down</li>
+        <li>mute</li>
+        <li>effect</li>
+        <li>level</li>
+        <li>input</li>
+        <li>input[1-5] individually</li>
+        <li>aux</li>
+        <li>test</li>
+      </ul>
+    </td>
+    <td>
+      <img src="./ha_display.png" style="width: 12rem;">
+    </td>
+  </tr>
+</table>
 
 ### Requirements
 
